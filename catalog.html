@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class='html' lang='ru'>
+  <head>
+    <meta charset='utf-8'>
+    <title>mishka</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <link rel='stylesheet' href='css/fonts.css' type='text/css'/>
+    <link rel='stylesheet' href='css/style.css' type='text/css'/>
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script async src="js/picturefill.js"></script>
+  </head>
+  <body class='body'>
+    <header class='header'>
+      <section class='header__top'>
+        <a class='header__logolink'>logo
+          <picture>
+            <source srcset='img/logo-desktop.svg' media='(min-width: 1050px)'>
+            <source srcset='img/logo-tablet.svg' media='(min-width: 668px)'>
+            <img class='header__logoimg' src='img/logo-mobile.svg' alt='#'>
+          </picture>
+        </a>
+        <button class='header__navbutton'>открыть/закрыть меню</button>
+      </section>
+      <ul class='header__list menu--closed'>
+        <li class='header__item header__item--first'>
+          <a class='header__navlink' href="#">Каталог товаров</a>
+          <a class='header__navlink header__navlink--hidden header__navlink--hiddenfirst' href="#">Новые поступления</a>
+        </li>
+        <li class='header__item header__item--second'>
+          <a class='header__navlink' href="#">Вязание на заказ</a>
+          <a class='header__navlink header__navlink--hidden header__navlink--hiddensecond' href="#">Распродажа</a>
+        </li>
+        <li class='header__item header__item--third'>
+          <a class='header__navlink header__navlink--search' href="#">Поиск по сайту</a>
+        </li>
+        <li class='header__item header__item--fourth'>
+          <a class='header__navlink header__navlink--cart' href="#">Корзина: <span>пока пуста</span></a>
+        </li>
+      </ul>
+    </header>
+    <main>
+    </main>
+    <footer class='footer'>
+      <div class='footer__item footer__item--mobilehidden'>
+        <a class='footer__logo'>
+          <img class='footer__logoimg' src='img/logo-mobile.svg' alt='#'>
+        </a>
+      </div>
+      <ul class='footer__list'>
+        <li class='footer__listitem'>
+          <a class='footer__link footer__link--first' href="#">Instagram</a>
+        </li>
+        <li class='footer__listitem'>
+          <a class='footer__link footer__link--second' href="#">Facebook</a>
+        </li>
+        <li class='footer__listitem'>
+          <a class='footer__link footer__link--third' href="#">Twitter</a>
+        </li>
+      </ul>
+      <div class='footer__item'>
+        <span class='footer__text'>Разработано</span>
+        <a class='footer__link footer__link--fourth' href="#">HTML Academy</a>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/menu.js"></script>
+  </body>
+</html>
