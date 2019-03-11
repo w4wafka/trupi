@@ -1,0 +1,238 @@
+.contacts {
+  background: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 39px;
+}
+
+.contacts h3 {
+  width: 100%;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.contacts__item,{
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.contacts__email {
+  width: 70px;
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__adress {
+  vertical-align: top;
+  width: 73px;
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__link,
+.contacts__text {
+  width: 170px;
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.contacts__text {
+  margin-bottom: 7px;
+}
+
+.contacts__link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 177px;
+  height: 1px;
+  background: #62d1ba;
+}
+
+.contacts__mapcontainer {
+  overflow: hidden;
+  width: 100%;
+  height: 457px;
+  margin: 0 auto;
+}
+
+.contacts__map {
+  margin-left: -800px;
+  margin-top: -200px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.contacts__button {
+  width: 260px;
+  height: 52px;
+  border: 2px solid #444444;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #444444;
+  display: block;
+  margin: 0 auto;
+  margin-top: 39px;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 57px;
+  }
+
+  .contacts__flexcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 668px;
+    justify-content: space-between;
+  }
+
+  .contacts h3 {
+    padding: 0 50px;
+    width: 100%;
+    margin-left: -6px;
+    margin-top: 36px;
+    margin-bottom: 33px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__item {
+    padding: 0;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 49px;
+  }
+
+  .contacts__email,
+  .contacts__link,
+  .contacts__adress,
+  .contacts__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__text {
+    width: 230px;
+  }
+
+  .contacts__mapcontainer {
+    margin-bottom: 16px;
+  }
+
+  .contacts__map {
+    margin-left: -550px;
+  }
+
+  .contacts__button {
+    width: 230px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .contacts {
+    padding-left: 275px;
+    padding-right: 100px;
+    position: relative;
+  }
+
+  .contacts h3 {
+    position: absolute;
+    z-index: 200;
+    font-size: 53px;
+    line-height: 57px;
+    left: 225px;
+    top: 107px;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      background: url('../img/flag.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: -56px;
+      top: -8px;
+    }
+  }
+
+  .contacts__flexcontainer {
+    flex-direction: column;
+    width: 350px;
+    justify-content: flex-end;
+  }
+
+  .contacts__item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+  }
+
+  .contacts__item--first {
+    margin-bottom: 30px;
+  }
+
+  .contacts__item--second {
+    margin-bottom: 140px;
+  }
+
+  .contacts__email,
+  .contacts__adress {
+    width: 65px;
+  }
+
+  .contacts__link,
+  .contacts__text {
+    width: 235px;
+    padding-left: 13px;
+  }
+
+  .contacts__link::after {
+    width: 200px;
+  }
+
+  .contacts__mapcontainer {
+    width: 525px;
+    margin-top: 57px;
+  }
+
+  .contacts__button {
+    position: absolute;
+    bottom: 73px;
+    left: 275px;
+  }
+
+  .contacts__map {
+    margin-left: -680px;
+  }
+}
